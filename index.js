@@ -196,7 +196,7 @@ app.post('/forgetpassword', async (req, res) => {
             to: user.email,
             from: process.env.EMAIL,
             subject: 'Password Reset',
-            text: `Please click on the following link to reset your password: https://bulk-email-tool-backend-moat.onrender.com/resetpassword/${token}`
+            text: `Please click on the following link to reset your password: https://mailware-bulk-email-tool.netlify.app/resetpassword/${token}`
         };
 
         await transporter.sendMail(mailOptions);
