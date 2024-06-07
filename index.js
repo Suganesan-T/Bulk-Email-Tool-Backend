@@ -23,7 +23,7 @@ if (!fs.existsSync(uploadDir)) {
 }
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://mailware-bulk-email-tool.netlify.app',
     credentials: true
   }));
 
